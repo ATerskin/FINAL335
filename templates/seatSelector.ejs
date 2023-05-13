@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Terrapin Seat Selector</title>
+    <link href="/seats.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class = "background-image">
+
+	<h1>Select Your Seat Below!</h1>
+    
+    <form action="/submitSeat" method="post">
+
+        <% if (availableSeats && availableSeats.length > 0) { %>
+            <h2>Available Seats:</h2>
+            <ul>
+              <% availableSeats.forEach(function(seat) { %>
+                <li><%= seat %></li>
+              <% }); %>
+            </ul>
+          <% } else { %>
+            Sorry! No available seats.
+          <% } %>
+          
+
+        <br>
+        <strong>Seat Selection</strong>
+    
+        <br>
+
+        <strong>Input a seat number (input WL1 or WL2 for wheelchair accommodation):</strong><br>
+        <strong>For UID Input make sure it is a number of 9 digits please!</strong>
+            <br>
+            <label>Name: <input type="text" name="name" required></label> 
+            <label>UID: <input type="text" name="uid" required pattern="\d{9}" title="Enter a valid UID" /></label> 
+            Seat Number: <input type="text" name="seatNumber" required>
+
+         
+
+    <input type="submit">
+
+
+    </form>
+
+    <br>
+    <br>
+    <hr>
+    <a href = "/">HOME</a>
+
+</body>
+
+</html>

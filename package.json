@@ -1,0 +1,20 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "Team Members - Add the name and directory id (in parentheses) of each member of your team. If you are working by yourself, add your name and directory id too.",
+  "main": "battleBus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongodb": "^5.4.0",
+    "nodemon": "^2.0.22"
+  }
+}

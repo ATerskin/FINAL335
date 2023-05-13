@@ -1,0 +1,7 @@
+.background-image {
+    background-image: url('bus_seating_chart.jpeg');
+    background-size: 15%;
+    background-position: 75% 0%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}

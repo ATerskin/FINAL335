@@ -1,5 +1,5 @@
 {
-  "name": "final",
+  "name": "ls",
   "version": "1.0.0",
   "description": "Team Members - Add the name and directory id (in parentheses) of each member of your team. If you are working by yourself, add your name and directory id too.",
   "main": "battleBus.js",

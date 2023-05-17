@@ -10,3 +10,13 @@ h2 {
     font-family: 'Comic Neue', cursive;;
 }
 
+#admin {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#adminhref {
+    color: red;
+}
+

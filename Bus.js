@@ -95,6 +95,35 @@ app.post("/submitSeat", async (req, res) => {
   }
   
 });
+
+// for Administrator use
+app.get("/administrator", async (req, res) => { 
+  res.render("administrator");
+});
+
+app.post("/deletion", async (req, res) => {
+
+
+  const collection = client.db(databaseAndCollection.db).collection(databaseAndCollection.collection);
+  collection.deleteMany({});
+  
+  
+  let answer = `<h1>All Passengers Deleted!</h1>`;
+  answer += `<br>`;
+  answer += `Seats Have Been Reset!`
+  answer += `<br>`;
+  answer += `<hr>`;
+  answer += `<a href="/">HOME</a>`;
+  let statusCode = 200;
+
+
+
+  res.writeHead(statusCode, {"Content-type": "text/html"});
+  res.end(answer);
+        
+    
+});
+  
   
 
 app.post("/submitPayment", async (req, res) => {
@@ -103,7 +132,7 @@ app.post("/submitPayment", async (req, res) => {
     //if there is no matching uid in the database 
     if (!ticket) {
       //print to screen the word error
-      res.send("There is no matching UID in the database.");
+      res.send("There is no matching UID in the database! Please hit back and retry!");
       
     }
     

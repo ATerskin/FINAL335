@@ -8,10 +8,8 @@ App Description -
 This application allows UMD students to choose a bus ticket 
 for the Terraping Commuter Bus. Additionally, students have the ability
 to double check their seat selection.
-
 Administrators - Have the option to reset all seat selection.
-/////////////////
 
-API links - Links to API(s) you are using.
-YouTube Demo Video - Link to a YouTube video that provides a demo of your application.
+API links - https://fonts.google.com/specimen/Comic+Neue
+YouTube Demo Video - https://www.youtube.com/watch?v=_SEKrKYr-fE
 
